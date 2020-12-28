@@ -38,6 +38,15 @@
     },
   ];
 
+  let slikePojaseva = [
+    "/pojasevi/bijeli.png",
+    "/pojasevi/zuti.png",
+    "/pojasevi/zeleni.png",
+    "/pojasevi/plavi.png",
+    "/pojasevi/crveni.png",
+    "/pojasevi/crni.png",
+  ];
+
   const checkPojas = () => {
     console.log("pojas: ", pojasevi[pojas].ime);
     console.log("tacnih zaredom: ", ukupnoTacnihZaredom);
@@ -105,12 +114,23 @@
 </script>
 
 <style>
+  @import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Open+Sans:wght@400;600&display=swap");
+
   main {
-    font-family: sans-serif;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
     text-align: center;
+    background-color: #ffffff;
+    border-radius: 20px;
   }
+
+  h1 {
+    font-family: "Bungee Shade", cursive;
+  }
+
   .brojevi {
     font-size: xx-large;
+    color: #2c2c2c;
   }
   .rezultat {
     font-size: xx-large;
@@ -118,42 +138,60 @@
     border-color: darkgrey;
     border: solid 1px;
     border-radius: 10px;
+    color: #black;
   }
   .dugme {
-    background-color: #44c767;
+    background-color: #ff3e2f;
     border-radius: 28px;
     border: 1px solid #18ab29;
     display: inline-block;
     cursor: pointer;
-    color: #ffffff;
     font-family: Arial;
     font-size: 17px;
     padding: 16px 31px;
     text-decoration: none;
     text-shadow: 0px 1px 0px #2f6627;
+    color: #eeeced;
+  }
+
+  .racun {
+    background-color: #e2e2e2;
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+  .tekst {
+    color: #2c2c2c;
+  }
+
+  .pojas {
+    width: 60%;
   }
 </style>
 
 <main>
   <h1>Tablica množenja</h1>
   <div>Imate {pojasevi[pojas].ime} pojas</div>
+  <img src={slikePojaseva[pojas]} alt="pojas" class="pojas" />
   <br />
-  <div>
-    <div>Izračunaj:</div>
+  <div class="racun">
+    <div>
+      <div class="tekst">Izračunaj:</div>
+      <br />
+      <div class="brojevi">{lijevi} * {desni}</div>
+    </div>
     <br />
-    <div class="brojevi">{lijevi} * {desni}</div>
+    <div class="tekst">Rezultat:</div>
+    <input
+      type="number"
+      class="rezultat"
+      bind:value={rezultat}
+      bind:this={elm}
+      on:keyup|preventDefault={handleKeyup} />
+    <br />
+    <br />
+    <button class="dugme" on:click|preventDefault={calculate}>Izračunaj</button>
   </div>
-  <br />
-  <div>Rezultat:</div>
-  <input
-    type="number"
-    class="rezultat"
-    bind:value={rezultat}
-    bind:this={elm}
-    on:keyup|preventDefault={handleKeyup} />
-  <br />
-  <br />
-  <button class="dugme" on:click|preventDefault={calculate}>Izračunaj</button>
   <br />
   <div>
     Treba Vam jos

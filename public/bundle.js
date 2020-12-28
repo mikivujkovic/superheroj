@@ -365,57 +365,61 @@ var app = (function () {
     	let t3;
     	let t4;
     	let t5;
-    	let br0;
+    	let img;
+    	let img_src_value;
     	let t6;
+    	let br0;
+    	let t7;
+    	let div5;
     	let div3;
     	let div1;
-    	let t8;
-    	let br1;
     	let t9;
-    	let div2;
+    	let br1;
     	let t10;
+    	let div2;
     	let t11;
     	let t12;
     	let t13;
-    	let br2;
     	let t14;
+    	let br2;
+    	let t15;
     	let div4;
-    	let t16;
-    	let input;
     	let t17;
-    	let br3;
+    	let input;
     	let t18;
-    	let br4;
+    	let br3;
     	let t19;
+    	let br4;
+    	let t20;
     	let button;
-    	let t21;
-    	let br5;
     	let t22;
-    	let div5;
+    	let br5;
     	let t23;
+    	let div6;
     	let t24;
     	let t25;
-    	let t26_value = /*pojasevi*/ ctx[10][/*pojas*/ ctx[8] + 1].ime + "";
     	let t26;
+    	let t27_value = /*pojasevi*/ ctx[10][/*pojas*/ ctx[8] + 1].ime + "";
     	let t27;
     	let t28;
-    	let br6;
     	let t29;
-    	let div6;
+    	let br6;
     	let t30;
+    	let div7;
     	let t31;
     	let t32;
-    	let div7;
     	let t33;
+    	let div8;
     	let t34;
     	let t35;
-    	let div8;
     	let t36;
+    	let div9;
     	let t37;
     	let t38;
-    	let div9;
     	let t39;
+    	let div10;
     	let t40;
+    	let t41;
     	let mounted;
     	let dispose;
 
@@ -430,85 +434,97 @@ var app = (function () {
     			t3 = text(t3_value);
     			t4 = text(" pojas");
     			t5 = space();
-    			br0 = element("br");
+    			img = element("img");
     			t6 = space();
+    			br0 = element("br");
+    			t7 = space();
+    			div5 = element("div");
     			div3 = element("div");
     			div1 = element("div");
     			div1.textContent = "Izračunaj:";
-    			t8 = space();
-    			br1 = element("br");
     			t9 = space();
+    			br1 = element("br");
+    			t10 = space();
     			div2 = element("div");
-    			t10 = text(/*lijevi*/ ctx[1]);
-    			t11 = text(" * ");
-    			t12 = text(/*desni*/ ctx[2]);
-    			t13 = space();
-    			br2 = element("br");
+    			t11 = text(/*lijevi*/ ctx[1]);
+    			t12 = text(" * ");
+    			t13 = text(/*desni*/ ctx[2]);
     			t14 = space();
+    			br2 = element("br");
+    			t15 = space();
     			div4 = element("div");
     			div4.textContent = "Rezultat:";
-    			t16 = space();
-    			input = element("input");
     			t17 = space();
-    			br3 = element("br");
+    			input = element("input");
     			t18 = space();
-    			br4 = element("br");
+    			br3 = element("br");
     			t19 = space();
+    			br4 = element("br");
+    			t20 = space();
     			button = element("button");
     			button.textContent = "Izračunaj";
-    			t21 = space();
-    			br5 = element("br");
     			t22 = space();
-    			div5 = element("div");
-    			t23 = text("Treba Vam jos\n    ");
-    			t24 = text(/*jos*/ ctx[9]);
-    			t25 = text("\n    pogodaka zaredom za\n    ");
-    			t26 = text(t26_value);
-    			t27 = text("\n    pojas");
-    			t28 = space();
-    			br6 = element("br");
-    			t29 = space();
+    			br5 = element("br");
+    			t23 = space();
     			div6 = element("div");
-    			t30 = text("ukupno pokusaja: ");
-    			t31 = text(/*ukupnoPokusaja*/ ctx[3]);
-    			t32 = space();
+    			t24 = text("Treba Vam jos\n    ");
+    			t25 = text(/*jos*/ ctx[9]);
+    			t26 = text("\n    pogodaka zaredom za\n    ");
+    			t27 = text(t27_value);
+    			t28 = text("\n    pojas");
+    			t29 = space();
+    			br6 = element("br");
+    			t30 = space();
     			div7 = element("div");
-    			t33 = text("ukupno tacnih: ");
-    			t34 = text(/*ukupnoTacnih*/ ctx[4]);
-    			t35 = space();
+    			t31 = text("ukupno pokusaja: ");
+    			t32 = text(/*ukupnoPokusaja*/ ctx[3]);
+    			t33 = space();
     			div8 = element("div");
-    			t36 = text("ukupno netacnih: ");
-    			t37 = text(/*ukupnoNetacnih*/ ctx[5]);
-    			t38 = space();
+    			t34 = text("ukupno tacnih: ");
+    			t35 = text(/*ukupnoTacnih*/ ctx[4]);
+    			t36 = space();
     			div9 = element("div");
-    			t39 = text("ukupno tacnih zaredom: ");
-    			t40 = text(/*ukupnoTacnihZaredom*/ ctx[6]);
-    			add_location(h1, file, 137, 2, 3269);
-    			add_location(div0, file, 138, 2, 3297);
-    			add_location(br0, file, 139, 2, 3344);
-    			add_location(div1, file, 141, 4, 3363);
-    			add_location(br1, file, 142, 4, 3389);
-    			attr_dev(div2, "class", "brojevi svelte-i70wus");
-    			add_location(div2, file, 143, 4, 3400);
-    			add_location(div3, file, 140, 2, 3353);
-    			add_location(br2, file, 145, 2, 3457);
-    			add_location(div4, file, 146, 2, 3466);
+    			t37 = text("ukupno netacnih: ");
+    			t38 = text(/*ukupnoNetacnih*/ ctx[5]);
+    			t39 = space();
+    			div10 = element("div");
+    			t40 = text("ukupno tacnih zaredom: ");
+    			t41 = text(/*ukupnoTacnihZaredom*/ ctx[6]);
+    			attr_dev(h1, "class", "svelte-om3k2v");
+    			add_location(h1, file, 172, 2, 3922);
+    			add_location(div0, file, 173, 2, 3950);
+    			if (img.src !== (img_src_value = /*slikePojaseva*/ ctx[11][/*pojas*/ ctx[8]])) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "pojas");
+    			attr_dev(img, "class", "pojas svelte-om3k2v");
+    			add_location(img, file, 174, 2, 3997);
+    			add_location(br0, file, 175, 2, 4060);
+    			attr_dev(div1, "class", "tekst svelte-om3k2v");
+    			add_location(div1, file, 178, 6, 4105);
+    			add_location(br1, file, 179, 6, 4147);
+    			attr_dev(div2, "class", "brojevi svelte-om3k2v");
+    			add_location(div2, file, 180, 6, 4160);
+    			add_location(div3, file, 177, 4, 4093);
+    			add_location(br2, file, 182, 4, 4221);
+    			attr_dev(div4, "class", "tekst svelte-om3k2v");
+    			add_location(div4, file, 183, 4, 4232);
     			attr_dev(input, "type", "number");
-    			attr_dev(input, "class", "rezultat svelte-i70wus");
-    			add_location(input, file, 147, 2, 3489);
-    			add_location(br3, file, 153, 2, 3628);
-    			add_location(br4, file, 154, 2, 3637);
-    			attr_dev(button, "class", "dugme svelte-i70wus");
-    			add_location(button, file, 155, 2, 3646);
-    			add_location(br5, file, 156, 2, 3725);
-    			add_location(div5, file, 157, 2, 3734);
-    			add_location(br6, file, 164, 2, 3843);
-    			add_location(div6, file, 165, 2, 3852);
-    			add_location(div7, file, 166, 2, 3899);
-    			add_location(div8, file, 167, 2, 3942);
-    			add_location(div9, file, 168, 2, 3989);
-    			attr_dev(main, "class", "svelte-i70wus");
-    			add_location(main, file, 136, 0, 3260);
+    			attr_dev(input, "class", "rezultat svelte-om3k2v");
+    			add_location(input, file, 184, 4, 4271);
+    			add_location(br3, file, 190, 4, 4422);
+    			add_location(br4, file, 191, 4, 4433);
+    			attr_dev(button, "class", "dugme svelte-om3k2v");
+    			add_location(button, file, 192, 4, 4444);
+    			attr_dev(div5, "class", "racun svelte-om3k2v");
+    			add_location(div5, file, 176, 2, 4069);
+    			add_location(br5, file, 194, 2, 4532);
+    			add_location(div6, file, 195, 2, 4541);
+    			add_location(br6, file, 202, 2, 4650);
+    			add_location(div7, file, 203, 2, 4659);
+    			add_location(div8, file, 204, 2, 4706);
+    			add_location(div9, file, 205, 2, 4749);
+    			add_location(div10, file, 206, 2, 4796);
+    			attr_dev(main, "class", "svelte-om3k2v");
+    			add_location(main, file, 171, 0, 3913);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -522,64 +538,67 @@ var app = (function () {
     			append_dev(div0, t3);
     			append_dev(div0, t4);
     			append_dev(main, t5);
-    			append_dev(main, br0);
+    			append_dev(main, img);
     			append_dev(main, t6);
-    			append_dev(main, div3);
+    			append_dev(main, br0);
+    			append_dev(main, t7);
+    			append_dev(main, div5);
+    			append_dev(div5, div3);
     			append_dev(div3, div1);
-    			append_dev(div3, t8);
-    			append_dev(div3, br1);
     			append_dev(div3, t9);
+    			append_dev(div3, br1);
+    			append_dev(div3, t10);
     			append_dev(div3, div2);
-    			append_dev(div2, t10);
     			append_dev(div2, t11);
     			append_dev(div2, t12);
-    			append_dev(main, t13);
-    			append_dev(main, br2);
-    			append_dev(main, t14);
-    			append_dev(main, div4);
-    			append_dev(main, t16);
-    			append_dev(main, input);
+    			append_dev(div2, t13);
+    			append_dev(div5, t14);
+    			append_dev(div5, br2);
+    			append_dev(div5, t15);
+    			append_dev(div5, div4);
+    			append_dev(div5, t17);
+    			append_dev(div5, input);
     			set_input_value(input, /*rezultat*/ ctx[0]);
-    			/*input_binding*/ ctx[14](input);
-    			append_dev(main, t17);
-    			append_dev(main, br3);
-    			append_dev(main, t18);
-    			append_dev(main, br4);
-    			append_dev(main, t19);
-    			append_dev(main, button);
-    			append_dev(main, t21);
-    			append_dev(main, br5);
+    			/*input_binding*/ ctx[15](input);
+    			append_dev(div5, t18);
+    			append_dev(div5, br3);
+    			append_dev(div5, t19);
+    			append_dev(div5, br4);
+    			append_dev(div5, t20);
+    			append_dev(div5, button);
     			append_dev(main, t22);
-    			append_dev(main, div5);
-    			append_dev(div5, t23);
-    			append_dev(div5, t24);
-    			append_dev(div5, t25);
-    			append_dev(div5, t26);
-    			append_dev(div5, t27);
-    			append_dev(main, t28);
-    			append_dev(main, br6);
-    			append_dev(main, t29);
+    			append_dev(main, br5);
+    			append_dev(main, t23);
     			append_dev(main, div6);
-    			append_dev(div6, t30);
-    			append_dev(div6, t31);
-    			append_dev(main, t32);
+    			append_dev(div6, t24);
+    			append_dev(div6, t25);
+    			append_dev(div6, t26);
+    			append_dev(div6, t27);
+    			append_dev(div6, t28);
+    			append_dev(main, t29);
+    			append_dev(main, br6);
+    			append_dev(main, t30);
     			append_dev(main, div7);
-    			append_dev(div7, t33);
-    			append_dev(div7, t34);
-    			append_dev(main, t35);
+    			append_dev(div7, t31);
+    			append_dev(div7, t32);
+    			append_dev(main, t33);
     			append_dev(main, div8);
-    			append_dev(div8, t36);
-    			append_dev(div8, t37);
-    			append_dev(main, t38);
+    			append_dev(div8, t34);
+    			append_dev(div8, t35);
+    			append_dev(main, t36);
     			append_dev(main, div9);
-    			append_dev(div9, t39);
-    			append_dev(div9, t40);
+    			append_dev(div9, t37);
+    			append_dev(div9, t38);
+    			append_dev(main, t39);
+    			append_dev(main, div10);
+    			append_dev(div10, t40);
+    			append_dev(div10, t41);
 
     			if (!mounted) {
     				dispose = [
-    					listen_dev(input, "input", /*input_input_handler*/ ctx[13]),
-    					listen_dev(input, "keyup", prevent_default(/*handleKeyup*/ ctx[11]), false, true, false),
-    					listen_dev(button, "click", prevent_default(/*calculate*/ ctx[12]), false, true, false)
+    					listen_dev(input, "input", /*input_input_handler*/ ctx[14]),
+    					listen_dev(input, "keyup", prevent_default(/*handleKeyup*/ ctx[12]), false, true, false),
+    					listen_dev(button, "click", prevent_default(/*calculate*/ ctx[13]), false, true, false)
     				];
 
     				mounted = true;
@@ -587,25 +606,30 @@ var app = (function () {
     		},
     		p: function update(ctx, [dirty]) {
     			if (dirty & /*pojas*/ 256 && t3_value !== (t3_value = /*pojasevi*/ ctx[10][/*pojas*/ ctx[8]].ime + "")) set_data_dev(t3, t3_value);
-    			if (dirty & /*lijevi*/ 2) set_data_dev(t10, /*lijevi*/ ctx[1]);
-    			if (dirty & /*desni*/ 4) set_data_dev(t12, /*desni*/ ctx[2]);
+
+    			if (dirty & /*pojas*/ 256 && img.src !== (img_src_value = /*slikePojaseva*/ ctx[11][/*pojas*/ ctx[8]])) {
+    				attr_dev(img, "src", img_src_value);
+    			}
+
+    			if (dirty & /*lijevi*/ 2) set_data_dev(t11, /*lijevi*/ ctx[1]);
+    			if (dirty & /*desni*/ 4) set_data_dev(t13, /*desni*/ ctx[2]);
 
     			if (dirty & /*rezultat*/ 1 && to_number(input.value) !== /*rezultat*/ ctx[0]) {
     				set_input_value(input, /*rezultat*/ ctx[0]);
     			}
 
-    			if (dirty & /*jos*/ 512) set_data_dev(t24, /*jos*/ ctx[9]);
-    			if (dirty & /*pojas*/ 256 && t26_value !== (t26_value = /*pojasevi*/ ctx[10][/*pojas*/ ctx[8] + 1].ime + "")) set_data_dev(t26, t26_value);
-    			if (dirty & /*ukupnoPokusaja*/ 8) set_data_dev(t31, /*ukupnoPokusaja*/ ctx[3]);
-    			if (dirty & /*ukupnoTacnih*/ 16) set_data_dev(t34, /*ukupnoTacnih*/ ctx[4]);
-    			if (dirty & /*ukupnoNetacnih*/ 32) set_data_dev(t37, /*ukupnoNetacnih*/ ctx[5]);
-    			if (dirty & /*ukupnoTacnihZaredom*/ 64) set_data_dev(t40, /*ukupnoTacnihZaredom*/ ctx[6]);
+    			if (dirty & /*jos*/ 512) set_data_dev(t25, /*jos*/ ctx[9]);
+    			if (dirty & /*pojas*/ 256 && t27_value !== (t27_value = /*pojasevi*/ ctx[10][/*pojas*/ ctx[8] + 1].ime + "")) set_data_dev(t27, t27_value);
+    			if (dirty & /*ukupnoPokusaja*/ 8) set_data_dev(t32, /*ukupnoPokusaja*/ ctx[3]);
+    			if (dirty & /*ukupnoTacnih*/ 16) set_data_dev(t35, /*ukupnoTacnih*/ ctx[4]);
+    			if (dirty & /*ukupnoNetacnih*/ 32) set_data_dev(t38, /*ukupnoNetacnih*/ ctx[5]);
+    			if (dirty & /*ukupnoTacnihZaredom*/ 64) set_data_dev(t41, /*ukupnoTacnihZaredom*/ ctx[6]);
     		},
     		i: noop,
     		o: noop,
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(main);
-    			/*input_binding*/ ctx[14](null);
+    			/*input_binding*/ ctx[15](null);
     			mounted = false;
     			run_all(dispose);
     		}
@@ -643,6 +667,15 @@ var app = (function () {
     		{ ime: "plavi", bodova: 70 },
     		{ ime: "crveni", bodova: 80 },
     		{ ime: "crni", bodova: 100 }
+    	];
+
+    	let slikePojaseva = [
+    		"/pojasevi/bijeli.png",
+    		"/pojasevi/zuti.png",
+    		"/pojasevi/zeleni.png",
+    		"/pojasevi/plavi.png",
+    		"/pojasevi/crveni.png",
+    		"/pojasevi/crni.png"
     	];
 
     	const checkPojas = () => {
@@ -752,6 +785,7 @@ var app = (function () {
     		pojas,
     		jos,
     		pojasevi,
+    		slikePojaseva,
     		checkPojas,
     		postaviZadatak,
     		handleKeyup,
@@ -772,6 +806,7 @@ var app = (function () {
     		if ("pojas" in $$props) $$invalidate(8, pojas = $$props.pojas);
     		if ("jos" in $$props) $$invalidate(9, jos = $$props.jos);
     		if ("pojasevi" in $$props) $$invalidate(10, pojasevi = $$props.pojasevi);
+    		if ("slikePojaseva" in $$props) $$invalidate(11, slikePojaseva = $$props.slikePojaseva);
     	};
 
     	if ($$props && "$$inject" in $$props) {
@@ -790,6 +825,7 @@ var app = (function () {
     		pojas,
     		jos,
     		pojasevi,
+    		slikePojaseva,
     		handleKeyup,
     		calculate,
     		input_input_handler,
