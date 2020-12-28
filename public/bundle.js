@@ -490,31 +490,31 @@ var app = (function () {
     			div10 = element("div");
     			t40 = text("ukupno tacnih zaredom: ");
     			t41 = text(/*ukupnoTacnihZaredom*/ ctx[6]);
-    			attr_dev(h1, "class", "svelte-om3k2v");
+    			attr_dev(h1, "class", "svelte-48w7zt");
     			add_location(h1, file, 172, 2, 3922);
     			add_location(div0, file, 173, 2, 3950);
     			if (img.src !== (img_src_value = /*slikePojaseva*/ ctx[11][/*pojas*/ ctx[8]])) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "pojas");
-    			attr_dev(img, "class", "pojas svelte-om3k2v");
+    			attr_dev(img, "class", "pojas svelte-48w7zt");
     			add_location(img, file, 174, 2, 3997);
     			add_location(br0, file, 175, 2, 4060);
-    			attr_dev(div1, "class", "tekst svelte-om3k2v");
+    			attr_dev(div1, "class", "tekst svelte-48w7zt");
     			add_location(div1, file, 178, 6, 4105);
     			add_location(br1, file, 179, 6, 4147);
-    			attr_dev(div2, "class", "brojevi svelte-om3k2v");
+    			attr_dev(div2, "class", "brojevi svelte-48w7zt");
     			add_location(div2, file, 180, 6, 4160);
     			add_location(div3, file, 177, 4, 4093);
     			add_location(br2, file, 182, 4, 4221);
-    			attr_dev(div4, "class", "tekst svelte-om3k2v");
+    			attr_dev(div4, "class", "tekst svelte-48w7zt");
     			add_location(div4, file, 183, 4, 4232);
     			attr_dev(input, "type", "number");
-    			attr_dev(input, "class", "rezultat svelte-om3k2v");
+    			attr_dev(input, "class", "rezultat svelte-48w7zt");
     			add_location(input, file, 184, 4, 4271);
     			add_location(br3, file, 190, 4, 4422);
     			add_location(br4, file, 191, 4, 4433);
-    			attr_dev(button, "class", "dugme svelte-om3k2v");
+    			attr_dev(button, "class", "dugme svelte-48w7zt");
     			add_location(button, file, 192, 4, 4444);
-    			attr_dev(div5, "class", "racun svelte-om3k2v");
+    			attr_dev(div5, "class", "racun svelte-48w7zt");
     			add_location(div5, file, 176, 2, 4069);
     			add_location(br5, file, 194, 2, 4532);
     			add_location(div6, file, 195, 2, 4541);
@@ -523,7 +523,7 @@ var app = (function () {
     			add_location(div8, file, 204, 2, 4706);
     			add_location(div9, file, 205, 2, 4749);
     			add_location(div10, file, 206, 2, 4796);
-    			attr_dev(main, "class", "svelte-om3k2v");
+    			attr_dev(main, "class", "svelte-48w7zt");
     			add_location(main, file, 171, 0, 3913);
     		},
     		l: function claim(nodes) {

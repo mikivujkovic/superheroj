@@ -120,7 +120,7 @@
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
     text-align: center;
-    background-color: #ffffff;
+    background-color: #e2e2e2;
     border-radius: 20px;
   }
 
@@ -130,7 +130,7 @@
 
   .brojevi {
     font-size: xx-large;
-    color: #2c2c2c;
+    color: #e2e2e2;
   }
   .rezultat {
     font-size: xx-large;
@@ -151,17 +151,17 @@
     padding: 16px 31px;
     text-decoration: none;
     text-shadow: 0px 1px 0px #2f6627;
-    color: #eeeced;
+    color: #e2e2e2;
   }
 
   .racun {
-    background-color: #e2e2e2;
+    background-color: #191919;
     border-radius: 20px;
     padding: 10px;
   }
 
   .tekst {
-    color: #2c2c2c;
+    color: #e2e2e2;
   }
 
   .pojas {
